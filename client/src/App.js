@@ -31,7 +31,9 @@ export default class App extends Component {
     const { movieInList } = this.state;
     return (
       <div>
-        {movieInList !== null ? <h3>{movieInList}</h3> : null}
+        {movieInList !== null ? (
+          <h3 className="movie-warning">{movieInList}</h3>
+        ) : null}
         <SavedList list={this.state.savedList} />
         <Route exact path="/" component={MovieList} />
         <Route
