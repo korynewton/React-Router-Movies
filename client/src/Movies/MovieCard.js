@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 const MovieCard = ({ movie }) => {
   const { title, director, metascore, stars, id } = movie;
   return (
